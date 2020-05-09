@@ -1,0 +1,48 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{3E24ABF8-14CC-4BE5-802C-92568433E822}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="Delphi 103\Vendas.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="Delphi 103.1\MDIAPP.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="Vendas">
+        <MSBuild Projects="Delphi 103\Vendas.dproj"/>
+    </Target>
+    <Target Name="Vendas:Clean">
+        <MSBuild Projects="Delphi 103\Vendas.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="Vendas:Make">
+        <MSBuild Projects="Delphi 103\Vendas.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="MDIAPP">
+        <MSBuild Projects="Delphi 103.1\MDIAPP.dproj"/>
+    </Target>
+    <Target Name="MDIAPP:Clean">
+        <MSBuild Projects="Delphi 103.1\MDIAPP.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="MDIAPP:Make">
+        <MSBuild Projects="Delphi 103.1\MDIAPP.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="Vendas;MDIAPP"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="Vendas:Clean;MDIAPP:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="Vendas:Make;MDIAPP:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>
