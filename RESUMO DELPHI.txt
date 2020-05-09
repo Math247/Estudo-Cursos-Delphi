@@ -1,0 +1,170 @@
+Windows dominava o mundo, mesmo existindo o macOS. Então chegou o IOS, o Android
+o Linux. Hoje estamos num mundo multiplataforma. O que se espera dessas aplicações
+eh q tenham um comportamento minimamente similar entre elas.
+
+-> O dilema de Multiplos Projetos para resolver um unico problema:
+-Qual plataforma implementar primeiro?
+-E então reescrever em outras plataformas?
+-Mesmo que você consiga compartilhar partes do código, continua com diferentes
+projetos e diferentes entregas
+
+-> Razão pela qual se existe:
+-Delphi e o C++ Builder, da Embarcadero, são ferramentas para um mundo multiplata-
+forma
+-Um único projeto permite gerar aplicações NATIVAS para todas as plataformas
+
+-> Suporte para os 3 niveis de desenvolvimento 
+-Componentes Visuais
+-Bibliotecas Comuns 
+-APIs
+
+->Inicando o Delphi:
+
+Get Started - Introduções
+
+Develop - Começando um projeto:
+- Create a new Multi-Device Application -> Criar uma aplicação multiplataforma
+
+Expand and Extend
+-Platforms and Extensions Manager - Gerenciar as plataformas instaladas
+-Get Add-ons from GetIt - Instalar bibliotecas[
+
+Linguagem Delphi:
+
+Conhecido também com Object Pascal
+Atualmente contando com 7 compiladores:(Win 32, ...)
+Compilado e fortemente tipado(type safe) - ou seja, tudo que passa do compilador, dificilmente dará problema na execução. O tipo é verificado na compilação.
+Compativel com Orientação a Objeto - Classes, inheritance, static, interfaces...
+
+-Plataforma:
+Adicionar visualmente pelo Tool Palette; Ex: Buttom, ToolBar, etc
+Mexer nas propriedades e nos eventos do que foi adicionado pelo Object Inspector
+
+Introdução ao Object Pascal:
+Não eh case sensitive.
+Programa de Console exemplo:
+program HelloConsole;
+var
+	strMessage: string;
+begin
+	strMessage := "Hello World";
+	writeln (strMessage);
+	//Esperar ate pressionar Enter
+	readln;
+end
+Programa Visual exemplo:
+program HelloVisual
+
+uses * 
+	...
+	...
+
+*Onde estão as bibliotecas que eu usarei no meu programa
+
+Buttom:
+-Eventos:
+onclick - ao apertar o botão, o que aparece. Exemplo:
+procedure ...;
+var
+	strMessage: string;
+begin
+	strMessage := "Hello World";
+	ShowMessage(strMessage);
+end;
+end
+
+-Propriedades:
+ex: Text: Muda o nome que aparece no console do botão
+StyleLookup: personaliza o botão
+
+Unit: Formulário Visual
+Se eu adiciono um botão, na unit ela declara o buttom. Se eu adiciono um OnClick no botão, adiciona na unit uma procedure
+do botão e eu programo assim, o que vai acontecer.
+
+Dentro da Unit:
+Interface:
+Onde estão as declarações dos objetos, tudo que você considera Global. Se num msm projeto eu declaro um segundo formulario,
+uma segunda unit, se na segunda unit eu faço uma referencia a primeira unit, as coisas que estão na interface estarao
+visiveis na segunda unite. 
+
+Implementation:
+não fica visivel para outra unit se referenciada. Onde vc faz seu codigo. Onde fica as procedures de onclick e assim
+por diante.
+
+Variaveis:
+
+declaração:
+se a variavel for declarada fora da procedure, ela tem visibilidade para todas as procedures;
+var
+	Value2: Integer = 10;
+	Correct2: Boolean = True;
+	A, B: Char;
+	dl: Double;
+
+Constantes:
+declaração:
+const
+	Thousand = 1000;
+	Pi = 3.14;
+	AuthorName = 'Matheus';
+
+ou
+const
+	ThousandAgain: Integer = 1000;
+
+Conversão:
+sl := 0.5 * 0.2;
+Show (sl.ToString);
+
+Array:
+Declaração:
+type
+	DayTemperatura = array [1...24] of Integer;
+
+var 
+	DayTemp := DayTemperatura;
+
+Record:
+Declaração:
+type
+	MyDate = package record
+		Year: Integer;
+		Month: Byte;
+		Day: Byte;
+	end;
+
+If ... then
+else
+
+begin
+	if....then
+	begin
+		if...then
+		if...then
+		else if ... then
+		else
+	end
+end
+
+For:
+
+var
+	Total, I: Integer;
+begin
+	Total := 0;
+	for I := 1 to 10 do
+		Total := Total + I;
+	Show(Total.ToString);
+end
+
+While:
+var
+	I: Integer;
+begin
+	I:= 1;
+	while I <= 20 do
+	begin
+		Show('Number ' + I.ToString);
+		Inc(I,2)
+	end
+end
