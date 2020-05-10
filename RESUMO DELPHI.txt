@@ -1,3 +1,5 @@
+Anotações Curso Delphi CE Youtube:
+
 Windows dominava o mundo, mesmo existindo o macOS. Então chegou o IOS, o Android
 o Linux. Hoje estamos num mundo multiplataforma. O que se espera dessas aplicações
 eh q tenham um comportamento minimamente similar entre elas.
@@ -169,3 +171,116 @@ begin
 	end
 end
 
+Anotações Delphi para Iniciante na Prática:
+
+Video 1: Conhecendo a IDE:
+
+IDE = Ambiente integrado de Desenvolvimento;
+
+Pastas: Ao salvar, dentro do Win32, estará o executável.
+Ao terminar a aplicação, rodar ela em modo release, para encurtar o tamanho do executavel que será entregue como produto final. Troca em:
+Build Configurations:
+-Debug
+-Release
+
+Para ver o código, podemos usar o atalho F12.
+
+Em Tool Pallete, você adiciona os componentes, por exemplo Botões e Edits.
+
+Video 2: Tipos de Arquivos:
+
+Dica, você pode executar o projeto, tanto apertando o botão verde, quanto apertando F9.
+Quais são os tipos de arquivos q o Delphi cria? 
+Um dos arquivos mais importantes é: 
+-o arquivo.pas; ex: Unit1.pas = Onde todo o código fonte do seu fomulário está.
+Temos ainda:
+- arquivo.dfm; ex: Unit1.dfm = É responsável pelo formulário visual. 
+- arquivo.res; ex: Project1.res = É onde ele salva em binario os recursos que nossa aplicação irá usar. 
+- arquivo.dpr; ex: Project1.dpr = É onde está o arquivo do projeto. Ele diz os formularios que estamos usando, e tudo o que a aplicação irá fazer.
+
+Video 3: Tipos de Dados:
+
+Delphi é uma liguagem tipada. Isso quer dizer que você não pode atribuir algo para uma variavel sem antes declarar o tipo da variavel, por exemplo.
+
+integer = inteiro 		= i : integer;
+double = real			= d : double;
+currency = real			= c : currency;
+real = real			= r : real;
+string = texto			= s : string;
+boolean = verdadeiro ou falso	= b : boolean;
+Date = data e hora		= Date : TDateTime; 
+
+Atribuir valor a variavel:
+i := 10;
+s := 'Matheus';
+b := true;
+b := false;
+
+Video 4: Procedures e Functions:
+
+Procedures = Procedimentos;
+
+Ao adicionar um botão na tela, e dar dois cliques nele, automaticamente é criado uma procedure, que pertence a classe do formulario, que chama um evento
+do botão, então quando apertar o botão ele vai executar o que está dentro da procedure.
+
+O que é Procedure:
+É um procedimento que não retorna um valor, ele simplesmente executa o que está dentro dele.
+
+O que é Function: 
+Executa o que está dentro dela e retorna um valor.
+
+*Ver Pasta: Delphi 201 Procedures e Functions;
+
+Obs : Debug
+para usar o debug, primeiro verificar se na build configuration esta em (Debug); 
+em seguida, marcar um break point. e executar o codigo com o botão de debug;
+para passar para proxima linha, apertar F8;
+passando o mouse em cima das variaveis, voce ve o que está dentro de cada uma delas;
+para entrar dentro da procedure, aperte F7;
+
+Video 5: Estutura Básica:
+
+Unit: Representa o nome do arquivo que você está usando. Se você salvar a unit com outro nome, ele mda o nome da unit tbm;
+Interface: Onde você prototipa a sua classe. Dentro dela temos:
+	Uses: Indica quais são as outras classes, arquivos, que meu formulario esta usando;
+	Type: Declaração especifica que demonstra um novo tipo. Você pode criar novos tipos de variavel;
+	Var: Aqui são declaradas as variaveis Globais, que são vistas por qualquer lugar do codigo, por qualquer procedure e função;
+Implementation: Seção da unit que determina onde começamos a implementar o código; 
+
+Video 6: Declaração de Variáveis:
+
+Podemos criar variaveis globais no Var da unit;
+Podemos criar variaveis para usar somente dentro de funções ou procedure, assim, somente a função irá enxergar essa variavel;
+Você só pode declarar as variaveis no inicio do procedimento ou função;
+
+Video 7: Casting de Variaveis:
+
+Delphi eh uma linguagem fortemente tipada;
+Casting eh você transformar um tipo de variavel em ouitro tipo de variavel;
+por exemplo:
+
+StrToInt(Valor) = estou transformando a variavel em string para inteiro;
+IntToStr(Valor) = fazendo o contrario;
+
+Video 8: Expressões Aritiméticas:
+
+Criei uma calculadora: *Delphi 202 Calculadora
+
+Video 9: Expressões Lógicas:
+
+OR = OU;
+AND = E;
+NOT = Não;
+= Igual;
+<> Diferente
+< menor
+<= menor ou igual
+> maior
+>= maior ou igual
+
+Video 10: Entrada de Dados:
+
+Se voce precisa perguntar algo ao usuario, voce usa o input box;
+Eh uma função que retorna uma string;
+
+Video 11: 
