@@ -282,5 +282,30 @@ Video 10: Entrada de Dados:
 
 Se voce precisa perguntar algo ao usuario, voce usa o input box;
 Eh uma função que retorna uma string;
+*Ver pasta Delphi 203 InputBox
 
-Video 11: 
+Video 11: Primeira Interface: **Revisar;
+
+Options em Application = troca o icone da aplicação;
+Options em Appearance = aplica um estilo diferente no projeto;
+
+Video 12: Propriedade do Form: **Revisar;
+
+Centralizar o fomr = Position;
+Mudar o nome do Form = Caption;
+Aba sempre maximizado = WindowState;
+Adicionar um menu = no Tool Palette digita MainMenu
+Adicionar menu ao apertar com botão direito = no Tool Palete: PopupMenu; nas Propriedades do Form: PopupMenu;
+
+Video 13: Message Dialog: 
+
+*Exemplo na pasta Delphi 204 MessageDialog
+
+Video 14: Formatando Valores:
+
+*Exemplo na pasta Delphi 205 FormatandoValores
+
+Video 15: MaskEdit:
+
+No Object Inspector, vai ate EditMask; 
+*Exemplo na pasta Delphi 206 EditMask;
