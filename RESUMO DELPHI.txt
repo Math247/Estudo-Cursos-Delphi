@@ -309,3 +309,60 @@ Video 15: MaskEdit:
 
 No Object Inspector, vai ate EditMask; 
 *Exemplo na pasta Delphi 206 EditMask;
+
+Video 16: if, then, else:
+
+*Ver pasta Delphi 207 If, Else;
+
+Video 17: try... except...
+
+* Ver pasta Delphi 208 Try, Except;
+
+Video 18: Case... Of:
+
+*Ver pasta Delphi 209 Case, Of;
+
+Video 19: For... do:
+
+*Ver pasta Delphi 210 For, Do;
+
+Video 20: While... do:
+
+*Ver pasta Delphi 211 While, Repeat;
+
+Video 21: Repeat.. Until:
+
+*Ver pasta Delphi 211 While, Repeat;
+
+Video 22: Timer:
+
+*Ver pasta Delphi 212 Timer;
+Me permite realizar uma ação a cada segundo;
+
+Video 23: Sessão... Uses:
+
+*Ver pasta Delphi 213 Uses;
+
+Video 24: Trabalhando com 2 Formulários:
+
+*Ver pasta Delphi 213 Uses;
+
+Video 25: Criação Automatica de Formularios:
+
+*VEr pasta Delphi 213 Uses;
+
+Video 26: Array:
+
+*Ver Pasta Delphi 214 Array;
+
+Video 27: Records: 
+
+*Ver Pasta Delphi 214 Array;
+
+Video 28: With:
+
+*Ver Pasta Delphi 214 Array;
+
+Video 29: Parametros por Referencia:
+
+*Ver Pasta Delphi 214 Array;
