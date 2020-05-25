@@ -1,0 +1,372 @@
+->Introdução:
+O que é Delphi
+-IDE visual para criação de aplicações; IDE = ambiente o que eu escrevo o código e te, todas as ferramentas necessárias para desnevolver a aplicação;
+-Consegue criar aplicações Win32 e Win64;
+-Possibilidade de desenvolvimento de aplicações Windows, Mac e IOS;
+-Linguagem eh desenvolvimento orientada a objetos;
+-Criar aplicações em HD e 3D com Firemonkey;
+-Compilador otimizado - despreza códigos desnecessários automaticamente;
+-Conectar aplicações em qualquer fonte de dados;
+-Suporte de desenvolvimento Multitier com REST e JSON;
+-Integrante do RAD Studio e All-Access;
+
+->Recursos do Delphi:
+
+Conhecendo a IDE:
+
+IDE eh ambiente integrado de desenvolvimento;
+Conselho: Toda e qualquer aplicação, utiliza o FireMonkey;
+Form Designer: Onde vc cria a aplicação, visual;
+Object Inspector: Altera propriedade e configura eventos; F1 eh o help do object inspector;
+Project Manager: Onde você gerencia seu projeto;
+Model View: Exibe a estrutura lógica e o conteúdo hierárquico do projeto;
+Recursos: Você pode adicionar ícones, bitmaps e outros e ira compilar junto com o programa, e pode ser gerenciavel direto do Object Inspector;
+Data Explorer: Permite adicionar, modificar, remover ou renomear conexões com o banco de dados;
+Tool Palette: Usado para iniciar um novo projeto, adicionar componentes a um formulário e novos elementos do repositório ao projeto;
+Code Editor: Fornece um meio conveniente de visualizar e modificar seu código fonte; Suporta no UTF-8;
+Change Bar: Mostra as linhas alteradas; Se está salva: verde; Se não está salva: Amarelo;
+Code Insight: Conjunto de ferramentas presentes no Code Editor que auxiliam na codificação:
+-Code Completion: Completar o código; CTRL + Space;
+-Code Parameter Hints: Mostra os parametros do método: CTRL + Shift + Space;
+-Code Hints: Mostra dica do código: CTRL + Shift + H
+-Block Completion: Criar códigos de forma automática: digita algo + TAB;
+-Code Templates: Introduzir de forma autompatica um bloco de código: CTRL + J;
+-Code Folding: Dividir o código {$REGION 'NOME'}
+-SyncEdit
+-To Do List: Trabalho com equipes grandes; CTRL + Shift + T;
+-BookMarks: Coloca marcação para navegar no código; CTRL + Shift + "numero"
+Refactoring: Recursos que a IDE traz para ajudar na produtividade:
+-Rename: Altera o nome em todos os lugares;
+-Extract Method: Cria um metodo;
+-Declare Variable: Declara uma variavel autoaticamente;
+-Find Unit: Acha a unit onde o metodo foi declarado;
+-Change Parameters: Adiciona parametros pra metodos e functions;
+-Extract Superclass;
+
+->Projetos:
+
+Projetos no Delphi- É um arquiv .dproj ou .dpr que reune todos os artefatos do projeto. conjunto de módulos qeu forma um sistema. Estes
+módulos são os formulários e as Units; 
+Units e formulários são as partes básicas de uma aplicação Delphi;
+.dpr - Lista todas as telas que compõe o projeto;
+.dproj - Direncia o projeto.
+
+-Tipos de Projetos:
+Aplicações Desktop;
+Aplicações Web;
+Aplicações DataSnap;
+
+-Unit
+Arquivos .pas;
+Onde fica definido todo seu código fonte;
+
+-Formulário;
+Arquivo do Formulário = .dfm
+Armazena o valor das propriedades definidas no Object Inspector;
+Cada form obrigatoriamente possui uma Unit;
+
+-Salvando o Projeto;
+CTRL + S = salva unit
+CTRL + Shift + S = salva tudo;
+É possível renomear através do Project Manager;
+
+-Extensões Comuns:
+.res
+.pas
+.exe
+.dcu
+.dpr, .dproj
+.dfm
+.groupproj
+
+-Fechando Projeto
+File / Close
+File / Close All
+
+-Abrindo um Projeto
+File / Open
+
+-Rodando o Projeto
+F9
+
+-Project Options: Forms
+--Mexe só no projeto que você está trabalhando
+Main Form
+Auto Create Forms - São criados automaticamente
+Available Forms - Não é criado automaticamente.
+Aplication = Configurar o q tem respeito a aplicação por exemplo, trocar o icone, etc;
+Appearance = Carrega temas na aplicação;
+
+->Conhecendo a IDE
+
+Tools Options:
+Afetam a IDE como todo, vão mexer em todos os projetos;
+-Environment Options
+Tool Palette = Altera a forma como a tool palette eh apresentada;
+Project Upgrading = O que fazer quando abrir um projeto de versões do Delphi passadas;
+Delphi Options:
+Library = Library path = qual pasta a mais você quer compilar junto com o projeto;
+Remote Profiles = Para compilar em MAC e outros;
+VCL Designer = Diz como você quer que a parte visual do formulário se comporte;
+-Editor Options:
+Mexe no editor, muda a cor, a linguagem e etc;
+-Translation Options
+Trata das opções de tradução;
+-Formatter:
+CTRL + D = formata a identação do Delphi
+No formatter, você altera essa identação;
+-Modeling 
+Trata de opções de UML
+-Debugger Options
+Mexe nas opções de debug;
+
+
+-Principais Atalhos:
+CTRL + "." = pesquisa na IDE inteira;
+CTRL + Shift + Space = Mostra os parametros;
+CTRL + Space = completa código;
+CTRL + ; = comenta as linhas selecionadas;
+Atallhos Refactoring:
+Declare Variable = CTRL + Shift + V
+Rename = CTRL + Shift + E
+Declare Field = CTRL + Shift + D
+Extract Method = CTRL + Shift + M
+Change Parameters = CTRL + Shift + X
+Find Unit = CTRL + Shift + A
+Extract Resource String + CTRL + Shift + L
+
+-VCL Style Designer: 
+Não gostou de nenhum estilo da Embarcadero, você piode criar o seu próprio: 
+Tools / VCL Style Designer;
+
+-Documentation Insight Express:
+Tools / Documentation insight ... 
+Explica seu código como comentários;
+
+-Translation Manager
+Maneira para traduzir o projeto para outras linguas;
+
+-Final Builder
+*Não tenho comprado;;
+
+-Code Site:
+*Não tenho comprado;;
+Util para descobrir erros na aplicação;
+
+Linguagem Delphi:
+Diretivas de Compilação: É algo que diz para o compilador fazer algo;
+Comentários: 
+//***;
+(*...*)
+{***}
+Exxpressões:
+Uma expressão é uma construção que retorna um valor. 
+Operadores Aritméticos:
++ = soma
+- = subtração
+* = multiplicação
+/ = divisão de reais
+div = divisão de inteiros
+mod = resto de divição
+
+Operadores Booleanos:
+not = negação
+and = adição
+or = "ou"
+xor
+
+Operadoers Relacionais:
+= igual
+<> diferente
+<  menor
+>  maior
+<= menor ou igual
+>= maior ou igual
+
+Atribuição 
+:= 
+
+Declaração:
+Var
+	x : Double;
+Instruções:
+Terminar em ponto e virgulam
+Bloco de código tem que estar com um begin end;
+End com ponto indica final de programa pro compilador;
+
+Chamada de Métodos:
+Consiste no nomem do procedimento, seguido por lista de parâmetros;
+parametros por referencia:
+
+function (var A, B : Integer) : Integer;
+"var" faz com que só possa passar parametros que sejam variaveis;
+eles recebem a referencia da variavel. O endereço de memória é apontado;
+Ao passar um variavel de referencia, eu passo o endereço de memória e consigo alterar a variavel de dentro da função;
+Ao declara variaveis como const, você está dizendo que é uma constante e não conseguirá alterar o valor da variavel;
+
+Estrutura de Decisão 
+If Then Else;
+Case OF;
+With;
+
+Estruturas de Loop:
+Repeat Until = teste no final da interação
+While Do = Teste é realizado antes da interação;
+For Do;
+For In;
+Break;
+Continue;
+*Ver pasta Delphi 301
+
+Tipos de Dados:
+Delphi eh uma liguagem fortemente tipada;
+Tipos numériocos Ordinais:
+
+Integer : aceita numero negativo
+Cardinal : não aceita numero negativo, mas guarda numeros maiores do que integer;
+ShortInt : Range  =  -128...127 - Usa pra For;
+Byte : Range = 0...255 - Usa pra For;
+
+Operadores Ordinais: 
+Ord - Pega o valor ordinal da variavel;
+Pred - Pega o valor anterior;
+Succ - Pega o valor sucessor;
+High - Maior valor suportado pelo tipo da variavel;
+Low - Menor Valor suportado pelo tipo da variavel;
+
+Tipos Numéricos Reais
+Real = ocupa mta memória;
+Double = mesma coisa que o Real
+Extend = se precisar trabalhar com valores de precição cientifica, pq o tamanho dele eh maior
+Currency;
+
+Tipos Caracter:
+
+String- não tem limite;
+
+Tipos Booleanos:
+
+boolean;
+
+Estrutura de Dados:
+ v 
+Arrays - coleção de elementos do mesmo tipo;
+*Ver pasta Delphi 302;
+
+Sets:
+coleção de itens do mesmo tipo, porém o set n pode ser dinamico e n pode ser multidimensional;
+você usa o set normalmente quando cria um componente;
+*Ver pasta Delphi 303;
+
+Records:
+Estrutura de itens de diversos; Record representa uma estrutura; == igual struct no C :);
+Diferença de Record e Clase= Record n tem destrutores;
+*Ver pasta Delphi 304
+
+Ponteiros: 
+Variaveis que representam um endereço de memória;
+*Ver pasta Delphi 305
+
+Generics:
+
+Nos permite definir um tipo no momento em que vamos utilizar;
+*Ver pasta Delphi 306
+
+Métodos Anônimos:
+É um método que não possui um nome e posso invocar como se fosse uma variavel;
+
+Elementos Básicos de interface:
+
+Rapid Application Development = RAD 
+Componentes: pedaços de software
+VCL = Biblioteca de Componentes = Visual Component Library; Composta de componentes visuais e não visuais;
+Os componentes herdam da classe TComponent;
+Os objetos visuais herdam de TControl;
+Quem tem foco herda de TWinControl;
+Quem n tem foco herda de TGraphicControl;
+
+Convenção de Nomeação:
+Todo componente deve ter uma identificação unica;
+Nomeação Húngara: Botão com função de incluir = btnIncluir;
+Auxilia na identificação;
+E padroniza;
+
+Buttons:
+Propriedades Principais:
+Name: Usa-se a nomenclatura Hungara = btnTeste;
+Caption: Nome que aparece visualmente no botão;
+Obs = Toda propriedade que aponta pra outro componente fica vermelha;
+Usando PopupMenu:
+DropDownMenu: Associe o popup ao botão por esse componente;
+Style: mude o estilo do botão para um botão de dropdown = bsSplitButton
+Style: mude o estilo do botão para aparencia de link = bsCommandLink
+Default: Deixa o botão como principal, se der Enter no teclado ele aperta o botão;
+
+BitButton:
+Propriedade principal:
+Kind: Mostra o que você irá fazer com o botão e sem qualquer código, ele executa; Ex: close;
+
+SpeedButton:
+Propriedades principal:
+Botão que não recebe foco; Eu clico no botão mas n recebe foco, continua em outro componente
+*Ver pasta Delphi 307 Btn;
+
+
+Standards:
+Edit:
+Propriedades:
+Numbers Only: Edit só aceitará numeros;
+CharCase: Deixa o Edit com letras minusculas ou maiusculas;
+Bevel: Propriedades de Borda;
+TextHint: Texto Sombreado que some ao apertar no Edit, para funcionar, apague o Text;
+
+Label:
+Para escrever algo no Form;
+
+ListBox:
+Lista fechada que você não pode digitar;
+Items: Adicionar algo no ListBox;
+
+Memo:
+Lista aberta que pode digitar;
+Trabalho da mesma forma que o Listbox;
+
+GoupBox e RadioGroup:
+No RadioGroup eu adiciono Itens, assim como o ListBox, mas ele se tornam Radio;
+No GroupBox eu posso adicionar qualquer componente;
+RadioGroup:
+Items: Adicionar os Radios
+Columns: organiza-los em colunas;
+
+CheckedBox: 
+Retorna True ou False se está marcado ou não;
+
+ComboBox:
+Items: Adiciona um item no ComboBox;
+
+*Ver pasta Delphi 308 Componentes;
+
+MainMenu:
+Componente não visual; Adiciona um Menu;
+Quebra no Menu = Bota um Hifen, e desativa o Enable;
+Ou
+Propriedade Break = mbBreak= Cria uma quebra e joga pro lado;
+mbBarBreak = Cria a quebra e bota uma barra vertical;
+SubMenu: Clica com o botão direito, Create Submenu;
+AutoCheck = Ao apertar no botão do menu, cria um checked do lado;
+ShortCut = Indica qual será a tecla de Atalho pra opção do Menu;
+
+ImageList:
+Adicionar Imagens no programa;
+Para referenciar ImageList em outro componente, ir na propriedade Images;
+
+ActionList:
+Programa ações que normalmente são feitas;
+Ver exemplo no Delphi;
+
+**Ver pasta Delphi 309 Componentes Não Visuais;
+
+TreeView:
+
+
+
