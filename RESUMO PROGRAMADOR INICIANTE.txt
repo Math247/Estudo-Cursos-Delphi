@@ -368,5 +368,156 @@ Ver exemplo no Delphi;
 
 TreeView:
 
+**Ver pasta Delphi 310 TreeView;
+
+Page Control:
+TabVisible : Torna visivel ou não, as abas em cima do page control;
+
+Animate: 
+Componente para usar animações;
+Common AVI : Escolhe a animação que irá usar;
+PAra usar o Animae, você precisa colocar um ShellResources
+
+DateTimePicker: 
+Componente para mostrar a data;
+DateFormat: Escolhe o formato da Data;
+
+MonthCalendar:
+Componente para mostrar o calendário;
+FirstDayOfWeek : Escolhe o primeiro dia da semana do calendário;
+
+FlowPanel: 
+Panel que me permite organizar edits;
+FlowStyle: Propriedade que altera a forma que os edits são organizados;
+
+GridPanel:
+Panel que divide em linhas qualquer componente;
+Column Collection: Edita quantas linhas você quer na divisão;
 
 
+CategoryButtons:
+Cria uma estrutura igual ao ToolPallete:
+Categories: Cria Nova categoria;
+
+Spliter:
+Permite que o cliente delimite o espaço que cada componente ocupa;
+**Ver pasta Delphi 311;
+
+Drag and Drop não funcionou!!
+**Ver pasta Delphi 312;
+Revisar a partir de Drag and Dock;
+Voltei a anotar na aula Progress Bar, Gauge, LinkLabel e SpinEdit
+
+ProgressBar:
+Barra de Progresso;
+Max: Quantidades de items que você for enviar, se forem 100 emails, o Max será 100;
+
+Gauge:
+Bem similar ao ProgressBar;
+Exibe porcentagem;
+Kind: muda o tipo do progresso; 
+
+SpinEdit:
+Assim como a progress bar e gauge, ele tem min e max. 
+só aceita números;
+
+LinkLabel:
+permite incluir tags html no caption, transformando o Label num link;
+
+Touch Keybord:
+Componente pronto que ja esta incorporado no Delphi;
+Layout: Muda de teclado normal, para numérico ou vice e versa;
+
+
+ButtonedEdit:
+Tem todas as propriedades de um edite normal
+precisa usr o Imagelist, pq mesmo colocando o botão visivel, ele não aparece;
+Em Left ou Right Buttom, vai no ImageIndex e seleciona a imagem;
+você pode programar o click dos botões;
+
+CustomHint:
+Usa o componente BallonHint:
+Configura o tipo e a imagem;
+
+Ribbon Controls:
+Ribbon: Tem que estar associado em um ActionManager;
+Clica com o btão direitopara adicionar uma nova aba;
+Dentro das abas, você clica com botão direito e organiza em grupos;
+Usa o imagelist para adicionar images;
+No Action Manager, simplesmente arrasta as ações para o grupo;
+Ao aperta na ação dentro do grupo, aparecerá no objct inspector:
+CommandProperties/CommandStyle: Se a ação é um botão, checkbox, etc...
+Aplication Menu: Para adicionar, clica com o botão direito e aperta para adicionar. é uma bolinha no canto superior direito
+Ela abre a lista de menus da aplicação;
+SubItens: aperta no item que vai ganhar o subitem no menu, e vai em Items;
+QuickAccesToolBar: Adiciona do mesmo jeito que o Application;
+Cria uma tool bar no menu; Para botar ações, só arrastar direto do action manager como em todos;
+RibonSpinEdit: Edit com botões do Ribon;
+RibonComboBox: Combobox do Ribon;
+ScreenTipsManager: Dicas de tela; Precisa preencher um Hint para as ações, e linkar o screentip para o actionlist: para fazer isso:
+Vai em LinkedActionLists, adiciona uma, e linka com o actionmanager;
+No ribbon control tem que apontar pro screentips;
+e no formulario, habilitar o ShowHint;
+
+Estrutura de Programa:
+
+Escopo:
+Seção Interface:
+Visibilidade: Unit declarada, e ourtas units que a usarem (uses); ou seja, qualquer coisa declarada na interface, pode ser usada por qualquer coisa dentrp da
+unit que a declarou, ou em outras units que declararam a unit principal, pelo uses;4
+Vida Util: Tempo de vida do form
+
+Seção Implementation: 
+Visibilidade: Somente na unit declarada;
+Vida Util: Tempo de vida do form;
+
+Referencia Circular de Units:
+para referenciar uma unit em outra, so ir no uses, mas para fazer a vice versa, usa o uses na implementation para n dar erro;
+
+Seção Initialization e Finalization:
+Tem situações quen você quer que aconteça antes do formulário ser inicializado;
+usa a palavra reservada initialization;
+O contrário, se destruiu ou liberou, antes de qualquer coisa executa o finalization:
+usa a palavra reservada finalization;
+
+Procedure ou Function:
+Visibilidade: Somente dentro do bloco do método;
+Vida Útil: Somente enquanto o método estiver em execução;
+Result: Declarada implicitamente, não percisa declarar manualmente; É o resultado da function;
+Se você quiser mante salvo o valor de uma procedure: constante modificada:
+como declarar :
+{$J+}
+const
+	Z: Integer = 10;
+{$J-}
+
+Parâmetros:
+Por valor: Valores originais intecatos ao finaç da execução do método. Compilador faz uma cópia da variável;
+Por referência: O valor original do parâmetro pode ser modificado durante a execução do método. Ponteiro direto para o endereço de memória da variável;
+**Ver pasta Delphi 313;
+
+Constante: Quando você quer garantir que o parametro não será modificado dentro da procedure ou function, use o const na declaração:
+procedure Dobro(const Valor : Double);
+
+Valor Default : 
+procedure Dobro (Valor : Double = 30);
+
+
+Tratamento de Exceções:
+
+O que é uma exceção: Garantir que a aplicação seja executada como um todo;
+No delphi, uma exceção é um objeto; Qualquer coisa que altera o fluxo, é uma exceção; 
+
+Bloco Try Except: usado para capturar qualquer tipo de erro;
+Bloco Try finally: usado para proteção de recursos, Sempre executa a parte do finally;
+o que é proteção de recurso: se você chamar um recurso, como o de screen cursor, para botar o mouse na ampulheta, usa o finally para liberar o mouse, sempre irá
+executa-lo;
+**Ver pasta Delphi314
+
+Raise: Mantem o objeto ativo após o tratamento, e também pode ser usado para forçar uma exceção;
+
+Podemos criar também exceções personalizadas;
+**Ver Pasta Delphi315
+
+Calculadora com excessões personalisadas, trabalhando com Classes e enumerados, case, e etc:
+**Ver Pàsta Delphi316
