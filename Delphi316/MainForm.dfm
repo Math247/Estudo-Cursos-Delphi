@@ -2,14 +2,15 @@ object Form1: TForm1
   Left = 0
   Top = 0
   Caption = 'Form1'
-  ClientHeight = 234
-  ClientWidth = 177
+  ClientHeight = 238
+  ClientWidth = 176
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
   Font.Height = -11
   Font.Name = 'Tahoma'
   Font.Style = []
+  Menu = MainMenu1
   OldCreateOrder = False
   OnCreate = FormCreate
   PixelsPerInch = 96
@@ -75,5 +76,13 @@ object Form1: TForm1
     EditLabel.Height = 13
     EditLabel.Caption = 'Resultado'
     TabOrder = 2
+  end
+  object MainMenu1: TMainMenu
+    Left = 120
+    Top = 16
+    object Configurao1: TMenuItem
+      Caption = 'Configura'#231#227'o'
+      OnClick = Configurao1Click
+    end
   end
 end

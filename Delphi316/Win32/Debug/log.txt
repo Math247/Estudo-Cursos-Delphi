@@ -1,0 +1,315 @@
+
+Data: 27/05/2020
+Classe do Erro: ESomaError
+Mensagem do Erro: Ocorreu um erro ao tentar executar uma operação de soma!
+
+Data: 27/05/2020
+Classe do Erro: ESomaError
+Mensagem do Erro: Ocorreu um erro ao tentar executar uma operação de soma!
+
+Data: 27/05/2020
+Classe do Erro: ESomaError
+Mensagem do Erro: Ocorreu um erro ao tentar executar uma operação de soma!
+
+Data: 27/05/2020
+Classe do Erro: ESomaError
+Mensagem do Erro: Ocorreu um erro ao tentar executar uma operação de soma!
+
+Data: 27/05/2020
+Classe do Erro: ESomaError
+Mensagem do Erro: Ocorreu um erro ao tentar executar uma operação de soma!
+
+Data: 27/05/2020
+Classe do Erro: ESomaError
+Mensagem do Erro: Ocorreu um erro ao tentar executar uma operação de soma!
+
+Data: 27/05/2020
+Classe do Erro: ESubtraiError
+Mensagem do Erro: Ocorreu um erro ao tentar executar uma operação de subtrair!
+
+Data: 27/05/2020
+Classe do Erro: EMultiplicaError
+Mensagem do Erro: Ocorreu um erro ao tentar executar uma operação de multiplicação!
+
+Data: 27/05/2020
+Classe do Erro: EDivideError
+Mensagem do Erro: Ocorreu um erro ao tentar executar uma operação de divisão!
+
+Data: 27/05/2020
+Classe do Erro: EDivideError
+Mensagem do Erro: Ocorreu um erro ao tentar executar uma operação de divisão!
+
+Data: 27/05/2020
+Classe do Erro: EDivideError
+Mensagem do Erro: Ocorreu um erro ao tentar executar uma operação de divisão!
+
+Data: 27/05/2020
+Classe do Erro: EDivideError
+Mensagem do Erro: Ocorreu um erro ao tentar executar uma operação de divisão!
+
+Data: 27/05/2020
+Classe do Erro: EDivideError
+Mensagem do Erro: Ocorreu um erro ao tentar executar uma operação de divisão!
+
+Data: 27/05/2020
+Classe do Erro: ESomaError
+Mensagem do Erro: Ocorreu um erro ao tentar executar uma operação de soma!
+
+Data: 27/05/2020
+Classe do Erro: ESomaError
+Mensagem do Erro: Ocorreu um erro ao tentar executar uma operação de soma!
+
+Data: 27/05/2020
+Classe do Erro: ESomaError
+Mensagem do Erro: Ocorreu um erro ao tentar executar uma operação de soma!
+
+Data: 27/05/2020
+Classe do Erro: ESubtraiError
+Mensagem do Erro: Ocorreu um erro ao tentar executar uma operação de subtrair!
+
+Data: 27/05/2020
+Classe do Erro: ESubtraiError
+Mensagem do Erro: Ocorreu um erro ao tentar executar uma operação de subtrair!
+
+Data: 27/05/2020
+Classe do Erro: ESubtraiError
+Mensagem do Erro: Ocorreu um erro ao tentar executar uma operação de subtrair!
+
+Data: 27/05/2020
+Classe do Erro: EMultiplicaError
+Mensagem do Erro: Ocorreu um erro ao tentar executar uma operação de multiplicação!
+
+Data: 27/05/2020
+Classe do Erro: EMultiplicaError
+Mensagem do Erro: Ocorreu um erro ao tentar executar uma operação de multiplicação!
+
+Data: 27/05/2020
+Classe do Erro: ESubtraiError
+Mensagem do Erro: Ocorreu um erro ao tentar executar uma operação de subtrair!
+
+Data: 27/05/2020
+Classe do Erro: ESubtraiError
+Mensagem do Erro: Ocorreu um erro ao tentar executar uma operação de subtrair!
+
+Data: 27/05/2020
+Classe do Erro: ESubtraiError
+Mensagem do Erro: Ocorreu um erro ao tentar executar uma operação de subtrair!
+
+Data: 27/05/2020
+Classe do Erro: ESubtraiError
+Mensagem do Erro: Ocorreu um erro ao tentar executar uma operação de subtrair!
+
+Data: 27/05/2020
+Classe do Erro: ESubtraiError
+Mensagem do Erro: Ocorreu um erro ao tentar executar uma operação de subtrair!
+
+Data: 27/05/2020
+Classe do Erro: ESubtraiError
+Mensagem do Erro: Ocorreu um erro ao tentar executar uma operação de subtrair!
+
+Data: 27/05/2020
+Classe do Erro: ESubtraiError
+Mensagem do Erro: Ocorreu um erro ao tentar executar uma operação de subtrair!
+
+Data: 27/05/2020
+Classe do Erro: ESubtraiError
+Mensagem do Erro: Ocorreu um erro ao tentar executar uma operação de subtrair!
+
+Data: 27/05/2020
+Classe do Erro: ESubtraiError
+Mensagem do Erro: Ocorreu um erro ao tentar executar uma operação de subtrair!
+
+Data: 27/05/2020
+Classe do Erro: ESubtraiError
+Mensagem do Erro: Ocorreu um erro ao tentar executar uma operação de subtrair!
+
+Data: 27/05/2020
+Classe do Erro: ESubtraiError
+Mensagem do Erro: Ocorreu um erro ao tentar executar uma operação de subtrair!
+
+Data: 27/05/2020
+Classe do Erro: ESubtraiError
+Mensagem do Erro: Ocorreu um erro ao tentar executar uma operação de subtrair!
+
+Data: 27/05/2020
+Classe do Erro: ESubtraiError
+Mensagem do Erro: Ocorreu um erro ao tentar executar uma operação de subtrair!
+
+Data: 27/05/2020
+Classe do Erro: ESubtraiError
+Mensagem do Erro: Ocorreu um erro ao tentar executar uma operação de subtrair!
+
+Data: 27/05/2020
+Classe do Erro: ESubtraiError
+Mensagem do Erro: Ocorreu um erro ao tentar executar uma operação de subtrair!
+
+Data: 27/05/2020
+Classe do Erro: ESubtraiError
+Mensagem do Erro: Ocorreu um erro ao tentar executar uma operação de subtrair!
+
+Data: 27/05/2020
+Classe do Erro: ESubtraiError
+Mensagem do Erro: Ocorreu um erro ao tentar executar uma operação de subtrair!
+
+Data: 27/05/2020
+Classe do Erro: ESubtraiError
+Mensagem do Erro: Ocorreu um erro ao tentar executar uma operação de subtrair!
+
+Data: 27/05/2020
+Classe do Erro: ESubtraiError
+Mensagem do Erro: Ocorreu um erro ao tentar executar uma operação de subtrair!
+
+Data: 27/05/2020
+Classe do Erro: ESubtraiError
+Mensagem do Erro: Ocorreu um erro ao tentar executar uma operação de subtrair!
+
+Data: 27/05/2020
+Classe do Erro: ESubtraiError
+Mensagem do Erro: Ocorreu um erro ao tentar executar uma operação de subtrair!
+
+Data: 27/05/2020
+Classe do Erro: EMultiplicaError
+Mensagem do Erro: Ocorreu um erro ao tentar executar uma operação de multiplicação!
+
+Data: 27/05/2020
+Classe do Erro: EMultiplicaError
+Mensagem do Erro: Ocorreu um erro ao tentar executar uma operação de multiplicação!
+
+Data: 27/05/2020
+Classe do Erro: EDivideError
+Mensagem do Erro: Ocorreu um erro ao tentar executar uma operação de divisão!
+
+Data: 27/05/2020
+Classe do Erro: EDivideError
+Mensagem do Erro: Ocorreu um erro ao tentar executar uma operação de divisão!
+
+Data: 27/05/2020
+Classe do Erro: ESubtraiError
+Mensagem do Erro: Ocorreu um erro ao tentar executar uma operação de subtrair!
+
+Data: 27/05/2020
+Classe do Erro: ESubtraiError
+Mensagem do Erro: Ocorreu um erro ao tentar executar uma operação de subtrair!
+
+Data: 27/05/2020
+Classe do Erro: ESubtraiError
+Mensagem do Erro: Ocorreu um erro ao tentar executar uma operação de subtrair!
+
+Data: 27/05/2020
+Classe do Erro: ESubtraiError
+Mensagem do Erro: Ocorreu um erro ao tentar executar uma operação de subtrair!
+
+Data: 27/05/2020
+Classe do Erro: ESubtraiError
+Mensagem do Erro: Ocorreu um erro ao tentar executar uma operação de subtrair!
+
+Data: 27/05/2020
+Classe do Erro: ESubtraiError
+Mensagem do Erro: Ocorreu um erro ao tentar executar uma operação de subtrair!
+
+Data: 27/05/2020
+Classe do Erro: ESubtraiError
+Mensagem do Erro: Ocorreu um erro ao tentar executar uma operação de subtrair!
+
+Data: 27/05/2020
+Classe do Erro: ESubtraiError
+Mensagem do Erro: Ocorreu um erro ao tentar executar uma operação de subtrair!
+
+Data: 27/05/2020
+Classe do Erro: ESubtraiError
+Mensagem do Erro: Ocorreu um erro ao tentar executar uma operação de subtrair!
+
+Data: 27/05/2020
+Classe do Erro: ESubtraiError
+Mensagem do Erro: Ocorreu um erro ao tentar executar uma operação de subtrair!
+
+Data: 27/05/2020
+Classe do Erro: EMultiplicaError
+Mensagem do Erro: Ocorreu um erro ao tentar executar uma operação de multiplicação!
+
+Data: 27/05/2020
+Classe do Erro: EMultiplicaError
+Mensagem do Erro: Ocorreu um erro ao tentar executar uma operação de multiplicação!
+
+Data: 27/05/2020
+Classe do Erro: EDivideError
+Mensagem do Erro: Ocorreu um erro ao tentar executar uma operação de divisão!
+
+Data: 27/05/2020
+Classe do Erro: ESubtraiError
+Mensagem do Erro: Ocorreu um erro ao tentar executar uma operação de subtrair!
+
+Data: 27/05/2020
+Classe do Erro: EMultiplicaError
+Mensagem do Erro: Ocorreu um erro ao tentar executar uma operação de multiplicação!
+
+Data: 27/05/2020
+Classe do Erro: EMultiplicaError
+Mensagem do Erro: Ocorreu um erro ao tentar executar uma operação de multiplicação!
+
+Data: 27/05/2020
+Classe do Erro: EMultiplicaError
+Mensagem do Erro: Ocorreu um erro ao tentar executar uma operação de multiplicação!
+
+Data: 27/05/2020
+Classe do Erro: ESubtraiError
+Mensagem do Erro: Ocorreu um erro ao tentar executar uma operação de subtrair!
+
+Data: 27/05/2020
+Classe do Erro: ESubtraiError
+Mensagem do Erro: Ocorreu um erro ao tentar executar uma operação de subtrair!
+
+Data: 27/05/2020
+Classe do Erro: ESubtraiError
+Mensagem do Erro: Ocorreu um erro ao tentar executar uma operação de subtrair!
+
+Data: 27/05/2020
+Classe do Erro: EMultiplicaError
+Mensagem do Erro: Ocorreu um erro ao tentar executar uma operação de multiplicação!
+
+Data: 27/05/2020
+Classe do Erro: EMultiplicaError
+Mensagem do Erro: Ocorreu um erro ao tentar executar uma operação de multiplicação!
+
+Data: 27/05/2020
+Classe do Erro: EDivideError
+Mensagem do Erro: Ocorreu um erro ao tentar executar uma operação de divisão!
+
+Data: 27/05/2020
+Classe do Erro: ESubtraiError
+Mensagem do Erro: Ocorreu um erro ao tentar executar uma operação de subtrair!
+
+Data: 27/05/2020
+Classe do Erro: ESomaError
+Mensagem do Erro: Ocorreu um erro ao tentar executar uma operação de soma!
+
+Data: 27/05/2020
+Classe do Erro: EDivideError
+Mensagem do Erro: Ocorreu um erro ao tentar executar uma operação de divisão!
+
+Data: 27/05/2020
+Classe do Erro: EIdSMTPReplyError
+Mensagem do Erro: Error: authentication failed: UGFzc3dvcmQ6
+
+
+Data: 27/05/2020
+Classe do Erro: EDivideError
+Mensagem do Erro: Ocorreu um erro ao tentar executar uma operação de divisão!
+
+Data: 27/05/2020
+Classe do Erro: EIdSMTPReplyError
+Mensagem do Erro: Error: authentication failed: UGFzc3dvcmQ6
+
+
+Data: 27/05/2020
+Classe do Erro: ESomaError
+Mensagem do Erro: Ocorreu um erro ao tentar executar uma operação de soma!
+
+Data: 27/05/2020
+Classe do Erro: EIdSMTPReplyError
+Mensagem do Erro: Error: authentication failed: UGFzc3dvcmQ6
+
+
+Data: 27/05/2020
+Classe do Erro: ESubtraiError
+Mensagem do Erro: Ocorreu um erro ao tentar executar uma operação de subtrair!
