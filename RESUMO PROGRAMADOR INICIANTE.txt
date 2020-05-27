@@ -519,5 +519,14 @@ Raise: Mantem o objeto ativo após o tratamento, e também pode ser usado para f
 Podemos criar também exceções personalizadas;
 **Ver Pasta Delphi315
 
-Calculadora com excessões personalisadas, trabalhando com Classes e enumerados, case, e etc:
+Calculadora com excessões personalisadas, trabalhando com Classes e enumerados, case, Log, ApplicationEvents e etc:
 **Ver Pàsta Delphi316
+
+Depuração:
+Atalhos:
+BreakPoints: F5;
+Preste atenção nas mensagens do depurador.
+Use o F8 para Deburar, e se precisar em ultimo caso o F7 para entrar no método;
+Interromper a execução da aplicação : CTRL F2;
+Quando entrar em looping: Coloca o cursor depois do looping e aperta F4;
+F9 : Aplicação continua sem deburar;
