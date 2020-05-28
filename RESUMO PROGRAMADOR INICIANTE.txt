@@ -530,3 +530,18 @@ Use o F8 para Deburar, e se precisar em ultimo caso o F7 para entrar no método;
 Interromper a execução da aplicação : CTRL F2;
 Quando entrar em looping: Coloca o cursor depois do looping e aperta F4;
 F9 : Aplicação continua sem deburar;
+
+
+Templates e Frames:
+Se tem uma estrutura que você sempre usa para certos projetos, então crie um template;
+Seleciona os componentes e vai em Component/Creat Component Template
+No tool palette, pesquise o nome do componente, e tudo estará certo;
+
+Frame é um pedaço de uma interface que pode ser aproveitado, trabalha com o conceito de herança visual;
+Criar Frame: File/new/other/Frame;
+Adicionar Frame no formulario: Só ir na tool palete e pesquisar por frame;
+primeiro cria o frame, depois adiciona;
+
+Repositório de Objetos:
+Toda aplicação provavelmente tem uma tela de login; Por que não criar um projeto básico para as aplicações;
+Só coloque no formulário base o que será comum para todas as telas, pq n da pra remover componentes, só adicionar;
