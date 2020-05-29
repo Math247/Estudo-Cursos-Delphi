@@ -405,7 +405,13 @@ Permite que o cliente delimite o espaço que cada componente ocupa;
 
 Drag and Drop não funcionou!!
 **Ver pasta Delphi 312;
-Revisar a partir de Drag and Dock;
+
+
+
+REVISAR A PARTIR DE DRAG AND DROP;
+
+
+
 Voltei a anotar na aula Progress Bar, Gauge, LinkLabel e SpinEdit
 
 ProgressBar:
@@ -533,6 +539,12 @@ F9 : Aplicação continua sem deburar;
 
 
 Templates e Frames:
+
+
+***REVISAR;
+
+
+
 Se tem uma estrutura que você sempre usa para certos projetos, então crie um template;
 Seleciona os componentes e vai em Component/Creat Component Template
 No tool palette, pesquise o nome do componente, e tudo estará certo;
@@ -545,3 +557,11 @@ primeiro cria o frame, depois adiciona;
 Repositório de Objetos:
 Toda aplicação provavelmente tem uma tela de login; Por que não criar um projeto básico para as aplicações;
 Só coloque no formulário base o que será comum para todas as telas, pq n da pra remover componentes, só adicionar;
+
+
+Herança Visual de formulários:
+
+***REVISAR;
+
+
+Orientação à Objeto:
