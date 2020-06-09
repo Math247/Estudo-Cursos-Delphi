@@ -565,3 +565,23 @@ Herança Visual de formulários:
 
 
 Orientação à Objeto:
+Encapsulamento:
+
+property: eh o private do java;,
+voce nao precisa chamar o SetNome, só chamar a variavel normalmente. o compilador faz o resto;
+se quiser, voce pode implementar tbm o GetNome, mas tbm nao precisa chama-lo;
+
+Polimorfismo: Capacidade de construir classes e botar nas classes metodos que se comportem de maneiras diferentes dependendo de onde foi chamado;
+Sobrescrever um metodo: function ExibeDados: String;virtual;abstract = virtual = da a possibilidade do metodo ser sobrescrito; = abstract = mostra que eu so quero
+implementar a função nas classes filhas;
+
+Construtor: Metodo responsavel por alocar memória;
+published
+	constructor Create;
+
+
+Destrutor: é chamado sempre que o objeto eh destruido; 
+  destructor Destroy Create;
+
+Gerencia de Memória: Sempre que voce cria um objeto, voce precisa destruir, senao ele continua na memoria; para destruir, so chamar o Free
+Produto.Free; ou Produto.FreeandNill;
