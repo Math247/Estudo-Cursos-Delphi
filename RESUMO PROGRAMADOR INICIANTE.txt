@@ -585,3 +585,18 @@ Destrutor: é chamado sempre que o objeto eh destruido;
 
 Gerencia de Memória: Sempre que voce cria um objeto, voce precisa destruir, senao ele continua na memoria; para destruir, so chamar o Free
 Produto.Free; ou Produto.FreeandNill;
+
+Banco de Dados:
+Principais tecnologias de acesso a dados:
+DataBase IBE = Ultrapassada, suporta todos os bancos que ele tem drive;
+IBDatabase = Componente de conexão especifico para o Interbase, só tem suporte para Interbase;
+ADOConnection = Da Microsoft.
+SQLConnection = Da Embarcadero. Se conecta direto com o banco de dados, usando um drive proprio;
+
+Para cada tecnologia, temos 4 componentes, cada um para um ato especifico;
+
+DataSet = desempena qualquer papel;
+
+Data Module: Recebe os componentes de banco de dados, e qualquer tipo de componente não visuais;
+Deixa a aplicação mais limpa, Geralmente so o DataSource fica no formulario principal;
+Adicionar 11 min
