@@ -5,9 +5,12 @@ interface
 type
   TPessoa = class
   private //visivel somente para essa unit;
-    Idade : Integer;
+
   public
-    Nome : String
+    Nome : String;
+    Idade : Integer;
+    Sexo : String;
+    Etnia : String;
   end;
 
 implementation

@@ -30,9 +30,10 @@ begin
   //sempre tem que dar um Create;
   Pessoa := TPessoa.Create;
   try
-    //só enxergo o nome, pois a Idade eh private;
+    //só enxergo o nome, pois a Idade eh private; Update: Agora Idade aparece pois é private;
     Pessoa.Nome := 'Matheus';
-    ShowMessage(Pessoa.Nome);
+    Pessoa.Sexo := 'Masculino';
+    ShowMessage(Pessoa.Nome + ' - ' + Pessoa.Sexo);
   finally
     //sempre destrua a classe criada, para não ocupar mémória
     Pessoa.Free;
