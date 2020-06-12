@@ -25,18 +25,26 @@ implementation
 
 procedure TForm1.Button1Click(Sender: TObject);
 var
-  Pessoa : TPessoa;
+  Pessoa, Pessoa2 : TPessoa;
 begin
   //sempre tem que dar um Create;
   Pessoa := TPessoa.Create;
+  Pessoa2 := TPessoa.Create;
   try
     //só enxergo o nome, pois a Idade eh private; Update: Agora Idade aparece pois é private;
     Pessoa.Nome := 'Matheus';
-    Pessoa.Sexo := 'Masculino';
-    ShowMessage(Pessoa.Nome + ' - ' + Pessoa.Sexo);
+    Pessoa.DataNasc := '26/03/2002';
+
+    Pessoa2.Nome := 'Thulio';
+    Pessoa2.DataNasc := '12/09/1987';
+
+    ShowMessage(Pessoa.Nome + ' - ' + IntToStr(Pessoa.Idade));
+
+    ShowMessage(Pessoa2.Nome + ' - ' + IntToStr(Pessoa2.Idade));
   finally
     //sempre destrua a classe criada, para não ocupar mémória
     Pessoa.Free;
+    Pessoa2.Free;
   end;
 
 end;
