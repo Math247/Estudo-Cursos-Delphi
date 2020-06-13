@@ -18,8 +18,15 @@ object Form1: TForm1
     Top = 232
     Width = 75
     Height = 25
-    Caption = 'Button1'
+    Caption = 'A'#231#227'o'
     TabOrder = 0
     OnClick = Button1Click
+  end
+  object edtNome: TEdit
+    Left = 312
+    Top = 205
+    Width = 121
+    Height = 21
+    TabOrder = 1
   end
 end

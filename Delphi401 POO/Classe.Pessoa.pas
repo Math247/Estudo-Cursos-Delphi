@@ -7,14 +7,22 @@ uses
 
 type
   TPessoa = class
-  private //visivel somente para essa unit;
-
+  private // visivel somente para essa unit;
+    FNome: String;
+    FEtnia: String;
+    FDataNasc: String;
+    FSexo: String;
+    function GetNome: String;
+    procedure SetNome(Value: String);
+    procedure SetEtnia(const Value: String);
+    procedure SetDataNasc(const Value: String);
+    procedure SetSexo(const Value: String);
   public
-    Nome : String;
-    DataNasc : String;
-    Sexo : String;
-    Etnia : String;
-    function Idade : Integer;
+    property DataNasc: String read FDataNasc write SetDataNasc;
+    property Sexo: String read FSexo write SetSexo;
+    property Etnia: String read FEtnia write SetEtnia;
+    property Nome: String read GetNome write SetNome;
+    function Idade: Integer;
   end;
 
 implementation
@@ -23,9 +31,36 @@ implementation
 
 function TPessoa.Idade: Integer;
 begin
-  //calcular e retornar a idade da pessoa Encapsulamento Coeso -
-  //não juntar varias funções dentro de um só método para conseguir reaproveitá-lo.
+  // calcular e retornar a idade da pessoa Encapsulamento Coeso -
+  // não juntar varias funções dentro de um só método para conseguir reaproveitá-lo.
   Result := Trunc((now - StrToDate(DataNasc)) / 365.25)
+end;
+
+function TPessoa.GetNome: String;
+begin
+  Result := FNome;
+end;
+
+procedure TPessoa.SetDataNasc(const Value: String);
+begin
+  FDataNasc := Value;
+end;
+
+procedure TPessoa.SetEtnia(const Value: String);
+begin
+  FEtnia := Value;
+end;
+
+procedure TPessoa.SetNome(Value: string);
+begin
+  if Value = '' then
+    raise Exception.Create('Não pode valor vazio');
+  FNome := Value;
+end;
+
+procedure TPessoa.SetSexo(const Value: String);
+begin
+  FSexo := Value;
 end;
 
 end.

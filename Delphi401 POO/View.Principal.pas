@@ -10,6 +10,7 @@ uses
 type
   TForm1 = class(TForm)
     Button1: TButton;
+    edtNome: TEdit;
     procedure Button1Click(Sender: TObject);
   private
     { Private declarations }
@@ -34,7 +35,7 @@ begin
   Cliente := TCliente.Create;
   try
     //só enxergo o nome, pois a Idade eh private; Update: Agora Idade aparece pois é private;
-    Pessoa.Nome := 'Matheus';
+    Pessoa.Nome := edtNome.Text;
     Pessoa.DataNasc := '26/03/2002';
 
     Cliente.Nome := 'Thulio';
