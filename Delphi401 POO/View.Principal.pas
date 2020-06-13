@@ -38,6 +38,9 @@ begin
     Pessoa2.Nome := 'Thulio';
     Pessoa2.DataNasc := '12/09/1987';
 
+    Pessoa2.SQL.Gravar;
+
+
     ShowMessage(Pessoa.Nome + ' - ' + IntToStr(Pessoa.Idade));
 
     ShowMessage(Pessoa2.Nome + ' - ' + IntToStr(Pessoa2.Idade));

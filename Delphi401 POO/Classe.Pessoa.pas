@@ -3,7 +3,7 @@ unit Classe.Pessoa;
 interface
 
 uses
-  System.SysUtils;
+  System.SysUtils, Classe.SQL;
 
 type
   TPessoa = class
@@ -14,6 +14,7 @@ type
     DataNasc : String;
     Sexo : String;
     Etnia : String;
+    SQL : TConSQL;
     function Idade : Integer;
   end;
 
