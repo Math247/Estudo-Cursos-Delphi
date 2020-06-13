@@ -14,7 +14,6 @@ type
     DataNasc : String;
     Sexo : String;
     Etnia : String;
-    SQL : TConSQL;
     function Idade : Integer;
   end;
 
