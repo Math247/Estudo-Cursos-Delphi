@@ -29,6 +29,7 @@ procedure TForm1.Button1Click(Sender: TObject);
 var
   Pessoa : TPessoa;
   Cliente : TCliente;
+  Value : Currency;
 begin
   //sempre tem que dar um Create;
   Pessoa := TPessoa.Create;
@@ -44,6 +45,14 @@ begin
     ShowMessage(Pessoa.Nome + ' - ' + IntToStr(Pessoa.Idade));
 
     ShowMessage(Cliente.Nome + ' - ' + IntToStr(Cliente.Idade));
+
+    ShowMessage(Pessoa.Receber(5));
+
+    Value := 10.5;
+
+    ShowMessage(Pessoa.Receber(Value));
+
+    ShowMessage(Pessoa.Receber(5,5));
   finally
     //sempre destrua a classe criada, para não ocupar mémória
     Pessoa.Free;

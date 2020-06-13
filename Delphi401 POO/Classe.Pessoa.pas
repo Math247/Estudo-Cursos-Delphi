@@ -23,6 +23,10 @@ type
     property Etnia: String read FEtnia write SetEtnia;
     property Nome: String read GetNome write SetNome;
     function Idade: Integer;
+    function Receber(I : Integer) : String; overload;
+    //permite a função ser sobrescrita com mesmo nome;
+    function Receber(I : Currency) : String; overload;
+    function Receber(A, B : Integer) : String; overload;
   end;
 
 implementation
@@ -34,6 +38,16 @@ begin
   // calcular e retornar a idade da pessoa Encapsulamento Coeso -
   // não juntar varias funções dentro de um só método para conseguir reaproveitá-lo.
   Result := Trunc((now - StrToDate(DataNasc)) / 365.25)
+end;
+
+function TPessoa.Receber(I: Currency): String;
+begin
+  Result := 'Recebi um valor currency: ' + CurrToStr(I);
+end;
+
+function TPessoa.Receber(I: Integer): String;
+begin
+  Result := 'Recebia um Valor Inteiro: ' + IntToStr(I);
 end;
 
 function TPessoa.GetNome: String;
@@ -61,6 +75,11 @@ end;
 procedure TPessoa.SetSexo(const Value: String);
 begin
   FSexo := Value;
+end;
+
+function TPessoa.Receber(A, B: Integer): String;
+begin
+  Result := 'A soma desses inteiros é: ' + IntToStr(A + B);
 end;
 
 end.
