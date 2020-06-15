@@ -7,11 +7,26 @@ uses Classe.Pessoa;
 type
   TCliente = class(TPessoa)
   private
+    FValorCredito: Currency;
+    procedure SetValorCredito(const Value: Currency);
 
   public
-    ValorCredito : Currency;
+    property ValorCredito : Currency read FValorCredito write SetValorCredito;
+    function RetornaNome : String; override;
   end;
 
 implementation
+
+{ TCliente }
+
+function TCliente.RetornaNome: String;
+begin
+  Result := 'Eu sou a classe TCliente';
+end;
+
+procedure TCliente.SetValorCredito(const Value: Currency);
+begin
+  FValorCredito := Value;
+end;
 
 end.

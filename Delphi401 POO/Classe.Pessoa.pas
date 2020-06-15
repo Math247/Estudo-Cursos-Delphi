@@ -27,6 +27,10 @@ type
     //permite a função ser sobrescrita com mesmo nome;
     function Receber(I : Currency) : String; overload;
     function Receber(A, B : Integer) : String; overload;
+
+    //serve para sinalizar para o programador que a função pode ser reescrita na classe
+    //filha
+    function RetornaNome : String; virtual;
   end;
 
 implementation
@@ -80,6 +84,11 @@ end;
 function TPessoa.Receber(A, B: Integer): String;
 begin
   Result := 'A soma desses inteiros é: ' + IntToStr(A + B);
+end;
+
+function TPessoa.RetornaNome: String;
+begin
+  Result := 'Eu sou a classe TPessoa';
 end;
 
 end.

@@ -53,6 +53,10 @@ begin
     ShowMessage(Pessoa.Receber(Value));
 
     ShowMessage(Pessoa.Receber(5,5));
+
+    ShowMessage(Pessoa.RetornaNome);
+
+    ShowMessage(Cliente.RetornaNome);
   finally
     //sempre destrua a classe criada, para não ocupar mémória
     Pessoa.Free;
