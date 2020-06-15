@@ -90,7 +90,7 @@ end;
 
 function TPessoa.RetornaNome: String;
 begin
-  Result := 'Eu sou a classe TPessoa';
+  Nome := 'TPessoa';
 end;
 
 end.

@@ -29,7 +29,9 @@ end;
 
 function TCliente.RetornaNome: String;
 begin
-  Result := 'Eu sou a classe TCliente';
+  //vai na classe mãe, executa o código da mesma fuñção da classe, depois retorna para cá
+  inherited;
+  Result := 'Eu sou filha de' + Nome;
 end;
 
 procedure TCliente.SetValorCredito(const Value: Currency);

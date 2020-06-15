@@ -54,7 +54,7 @@ begin
 
     ShowMessage(Pessoa.Receber(5,5));
 
-    ShowMessage(Pessoa.RetornaNome);
+    Pessoa.RetornaNome;
 
     ShowMessage(Cliente.RetornaNome);
 
