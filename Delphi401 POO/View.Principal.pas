@@ -28,14 +28,22 @@ implementation
 procedure TForm1.Button1Click(Sender: TObject);
 var
   Pessoa : TPessoa;
-  Cliente : TCliente;
+  Cliente, Cliente2, Cliente3 : TCliente;
   Value : Currency;
 begin
   //sempre tem que dar um Create;
   Pessoa := TPessoa.Create;
+  Pessoa.Nome := 'Fulano';
+  Pessoa.DataNasc := '01/01/2000';
+  Pessoa.Sexo := 'Masculino';
+  //cada create executa algo que foi definido no construtor;
   Cliente := TCliente.Create;
+  Cliente2 := TCliente.Create('Matheus');
+  Cliente3 := TCliente.Create(Pessoa);
   try
     //só enxergo o nome, pois a Idade eh private; Update: Agora Idade aparece pois é private;
+    ShowMessage(Cliente.Nome);
+    ShowMessage(Cliente2.Nome);
     Pessoa.Nome := edtNome.Text;
     Pessoa.DataNasc := '26/03/2002';
 
@@ -59,10 +67,14 @@ begin
     ShowMessage(Cliente.RetornaNome);
 
     ShowMessage(Cliente.MetodoAbstrato);
+
+    ShowMessage(Cliente3.Nome + '-' + Cliente3.DataNasc + '-' + Cliente3.Sexo);
   finally
     //sempre destrua a classe criada, para não ocupar mémória
     Pessoa.Free;
     Cliente.Free;
+    Cliente2.Free;
+    Cliente3.Free;
   end;
 
 end;
