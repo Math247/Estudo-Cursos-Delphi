@@ -57,6 +57,8 @@ begin
     ShowMessage(Pessoa.RetornaNome);
 
     ShowMessage(Cliente.RetornaNome);
+
+    ShowMessage(Cliente.MetodoAbstrato);
   finally
     //sempre destrua a classe criada, para não ocupar mémória
     Pessoa.Free;

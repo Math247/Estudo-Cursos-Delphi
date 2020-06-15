@@ -12,12 +12,20 @@ type
 
   public
     property ValorCredito : Currency read FValorCredito write SetValorCredito;
+    //SINALIZA PARA O PROGRAMADOR QUE A FUNÇÃO FOI REESCRITA
     function RetornaNome : String; override;
+
+    function MetodoAbstrato : String; override;
   end;
 
 implementation
 
 { TCliente }
+
+function TCliente.MetodoAbstrato: String;
+begin
+  Result := 'Eu sou o método abstrato';
+end;
 
 function TCliente.RetornaNome: String;
 begin

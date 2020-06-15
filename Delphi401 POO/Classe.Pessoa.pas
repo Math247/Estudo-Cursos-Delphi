@@ -24,13 +24,15 @@ type
     property Nome: String read GetNome write SetNome;
     function Idade: Integer;
     function Receber(I : Integer) : String; overload;
+
     //permite a função ser sobrescrita com mesmo nome;
     function Receber(I : Currency) : String; overload;
     function Receber(A, B : Integer) : String; overload;
 
-    //serve para sinalizar para o programador que a função pode ser reescrita na classe
-    //filha
+    //serve para sinalizar para o programador que a função pode ser reescrita na classe filha
     function RetornaNome : String; virtual;
+    //serve para sinalizar que pode ser implementado em outras classes, e não será implementado na classe mãe
+    function MetodoAbstrato : String; virtual; abstract;
   end;
 
 implementation
