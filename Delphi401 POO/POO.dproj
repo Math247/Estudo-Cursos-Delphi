@@ -105,6 +105,7 @@
         <DCCReference Include="Classe.Pessoa.pas"/>
         <DCCReference Include="Classe.SQL.pas"/>
         <DCCReference Include="Classe.Cliente.pas"/>
+        <DCCReference Include="Classe.Endereco.pas"/>
         <BuildConfiguration Include="Release">
             <Key>Cfg_2</Key>
             <CfgParent>Base</CfgParent>

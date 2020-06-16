@@ -69,6 +69,8 @@ begin
     ShowMessage(Cliente.MetodoAbstrato);
 
     ShowMessage(Cliente3.Nome + '-' + Cliente3.DataNasc + '-' + Cliente3.Sexo);
+
+    ShowMessage(Cliente.Endereco.Logradouro);
   finally
     //sempre destrua a classe criada, para não ocupar mémória
     Pessoa.Free;
