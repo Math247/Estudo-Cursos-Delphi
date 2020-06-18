@@ -6,16 +6,14 @@ type
 
   TPessoa = class
   private
-    FFuncao: String;
     FSalario: Currency;
     FNome: String;
-    procedure SetFuncao(const Value: String);
     procedure SetNome(const Value: String);
     procedure SetSalario(const Value: Currency);
   public
     property Nome : String read FNome write SetNome;
-    property Funcao : String read FFuncao write SetFuncao;
     property Salario : Currency read FSalario write SetSalario;
+    function calcularSalario : Currency; virtual;
   end;
 
 implementation
@@ -25,11 +23,9 @@ uses
 
 { TPessoa }
 
-procedure TPessoa.SetFuncao(const Value: String);
+function TPessoa.calcularSalario: Currency;
 begin
-  if Value = '' then
-    raise Exception.Create('Função não pode ser vazia!');
-  FFuncao := Value;
+  Result := Salario;
 end;
 
 procedure TPessoa.SetNome(const Value: String);
