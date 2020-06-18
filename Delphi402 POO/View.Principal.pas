@@ -28,15 +28,19 @@ type
     btnCalcular: TButton;
     procedure btnCadastrarClick(Sender: TObject);
     procedure FormCreate(Sender: TObject);
+    procedure Button2Click(Sender: TObject);
+    procedure Button3Click(Sender: TObject);
   private
     procedure fnc_IncluirAdministrativo;
     procedure fnc_IncluirVendedor;
     procedure fnc_IncluirFuncionario;
+    procedure fnc_ExibirDados(Pos : Integer);
     { Private declarations }
   public
     { Public declarations }
     Funcionario: Array [1 .. 100] of TPessoa;
     QtdFunc: Integer;
+    RegAtual : Integer;
   end;
 
 var
@@ -73,6 +77,51 @@ end;
 procedure TForm1.FormCreate(Sender: TObject);
 begin
   QtdFunc := 0;
+  RegAtual := 0;
+end;
+
+procedure TForm1.Button2Click(Sender: TObject);
+begin
+  if RegAtual <= 0 then
+    exit;
+
+  RegAtual := RegAtual - 1;
+  fnc_ExibirDados(RegAtual);
+end;
+
+procedure TForm1.Button3Click(Sender: TObject);
+begin
+  if RegAtual >= QtdFunc then
+    exit;
+
+  RegAtual := RegAtual + 1;
+  fnc_ExibirDados(RegAtual);
+end;
+
+procedure TForm1.fnc_ExibirDados(Pos: Integer);
+begin
+  edtNome.Text := Funcionario[RegAtual].Nome;
+  edtSalario.Text := CurrToStr(Funcionario[RegAtual].Salario);
+
+  if (Funcionario[RegAtual].ClassName = 'TAdministrativo') then
+  begin
+    edtBonus.Enabled := true;
+    edtBonus.Text := CurrToStr(TAdministrativo(Funcionario[RegAtual]).Bonus);
+    cbFuncao.ItemHeight := Integer(tpAdministrativo);
+  end;
+  if (Funcionario[RegAtual].ClassName = 'TVendedor') then
+  begin
+    edtBonus.Enabled := true;
+    edtBonus.Text := CurrToStr(TVendedor(Funcionario[RegAtual]).Comissao);
+    cbFuncao.ItemHeight := Integer(tpVendedor);
+  end;
+  if (Funcionario[RegAtual].ClassName = 'TPessoa') then
+  begin
+    edtBonus.Enabled := false;
+    edtBonus.Text := '';
+    cbFuncao.ItemIndex := Integer(tpFuncionario);
+  end;
+
 end;
 
 procedure TForm1.fnc_IncluirAdministrativo;
