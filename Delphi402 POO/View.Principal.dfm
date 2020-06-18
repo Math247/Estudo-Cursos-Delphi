@@ -115,7 +115,8 @@ object Form1: TForm1
     Top = 96
     Width = 94
     Height = 25
-    Caption = 'Calcular Sal'#225'rio'
+    Caption = 'Calcular Sal'#225'rios'
     TabOrder = 8
+    OnClick = btnCalcularClick
   end
 end

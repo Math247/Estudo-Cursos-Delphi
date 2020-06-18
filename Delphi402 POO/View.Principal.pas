@@ -30,6 +30,7 @@ type
     procedure FormCreate(Sender: TObject);
     procedure Button2Click(Sender: TObject);
     procedure Button3Click(Sender: TObject);
+    procedure btnCalcularClick(Sender: TObject);
   private
     procedure fnc_IncluirAdministrativo;
     procedure fnc_IncluirVendedor;
@@ -78,6 +79,20 @@ procedure TForm1.FormCreate(Sender: TObject);
 begin
   QtdFunc := 0;
   RegAtual := 0;
+end;
+
+procedure TForm1.btnCalcularClick(Sender: TObject);
+var
+  Total : Currency;
+  I : Integer;
+begin
+  Total := 0;
+  for I := 0 to QtdFunc - 1 do
+  begin
+    Total := Total + Funcionario[I].calcularSalario;
+  end;
+  Memo1.Lines.Add('Sua folha salarial é de: R$ ' + CurrToStr(Total));
+
 end;
 
 procedure TForm1.Button2Click(Sender: TObject);
