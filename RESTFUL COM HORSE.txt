@@ -1,0 +1,43 @@
+AULA 1 : COMPREENDENDO AS BOAS PRÁTICAS PARA SERVIDORES DE APLICAÇÃO
+Escalando a aplicação com baixo custo:
+LightSail
+
+Boas práticas nos servidores REST:
+Pegar o que acontece no android, e replicar no desktop;
+
+API Application:
+Desenvolver o Back-End que é compartilhado entre suas aplicações Web e Nativas;
+
+Resource 
+Elementos de informação que podem ser manipulados através de um identificador gloal;
+Recurso: USUARIO
+ID : www.meusite.com/usuario
+A nomeação de um recurso é sempre um substantivo, nunca um verbo;
+Erro Comum com Recursos:
+www.meusite.com/cancelarnota/15 - é um erro por que você ta alterando o recurso;
+Correto:
+www.meusite.com/nota/15/cancelar == Boas praticas de trabalhar com URL
+
+O que é ETag?
+URI> IDENTIFICADOR UNIFORME DE RECURSOS
+Recurso : USUARIO
+URI : www.meusite.com/usuario
+URL : compõe o protocolo : http://www...
+
+Versionamento de respostas do Servidor:
+ETag: Recurso para realizar o versionamento de respostas do Servidor;
+Toda vez q o servidor der uma resposta para a aplicação, ele manda um ETag;
+
+Criando servidor de aplicação no Horse;
+horse github no google;
+La tem o exemplo de criando um servidor;
+tem que baixar e adicionar o diretório no Delphi;
+
+Pulo do Gato
+podem acontecer de varias requisições simultaneas acontecerem no servidor ao mesmo tempo; 
+se usar uma unican conexão, varias requisições simultaneas estarão usufruindo dessa unica conexão. o ideal eh que cada requisição abra uma consexão
+faça o que tem q fazer, depois feche a conexão;
+
+**REVISAR AULA 1;
+
+Pool de conexões:
